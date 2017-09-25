@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>Listing Colors from Arrays</title>
+		<link rel="stylesheet" style type="text/css" href="style.css">
+		
+	</head>
+	<body>
+		<!-- The rest is content -->
+		
+		
+		<script type="text/javascript">
+	        
+            //Colors array, and positions array to be used
+            
+            var color = ["Blue", "Green", "Red", "Orange", "Violet", "Indigo", "Yellow"];
+            var o = ["th", "st", "nd", "rd"];
+            
+            //Iterates through the array and applies the proper suffix to each number
+            
+            for (var i = 0; i < color.length; i++){
+            
+                if(i < 3){
+                    var suffix = o[i + 1]
+                } else {
+                    var suffix = o[0];
+                }
+                //Concatenating the color, suffix and rest of the sentence to the console
+                console.log((i + 1 + suffix + " choice is ") + color[i]);
+            }
+        </script>
+		
+	</body>
+</html>
